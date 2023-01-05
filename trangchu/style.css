@@ -1,0 +1,169 @@
+body {
+  color: #333;
+}
+/* main */
+#main {
+  border-bottom: 1px solid #ddd;
+}
+.slide {
+  margin: 10px 0 20px;
+}
+.active-img {
+  height: 400px;
+}
+.title {
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  text-align: left;
+}
+.main-img img {
+  width: 100%;
+  height: 145px;
+  top: 0;
+  left: 0;
+  object-position: 50% 50%;
+  transition: all 0.3s linear;
+}
+.menu-user {
+  transform: translate3d(-40px, 40px, 0px);
+}
+.main-img {
+  position: relative;
+  height: 145px;
+  overflow: hidden;
+  box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+}
+.main-img:hover img {
+  transform: scale(1.1);
+}
+.empty {
+  min-width: 200px;
+  height: 100px;
+  border: 1px solid #e9eaeb;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.empty a {
+  padding: 5px;
+  color: #fff;
+  background-color: #545b62;
+  font-weight: bold;
+  text-decoration: none;
+}
+.product1 {
+  margin-bottom: 20px;
+}
+.product2 {
+  padding-bottom: 100px;
+}
+.main-title a {
+  color: #545b62;
+  text-decoration: none;
+}
+.main-title__img img {
+  width: 100%;
+  height: 400px;
+}
+.main-title__content {
+  border: 1px solid #ddd;
+  padding: 10px 15px 20px;
+  box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+}
+.main-title__content h5 {
+  color: #545b62;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.p {
+  font-size: 15px;
+}
+.main-title__time {
+  font-size: 12px;
+}
+.main-title__btn {
+  font-size: 14px;
+  background-color: #fff;
+  color: #545b62;
+  border: none;
+  border-bottom: 2px solid #545b62;
+}
+.main-title__btn:hover {
+  background-color: #545b62;
+  color: #fff;
+}
+.main-title__mini {
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  padding: 15px 0;
+  box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+}
+.main-title__mini a {
+  color: #545b62;
+  text-decoration: none;
+}
+.mini-img img {
+  width: 100%;
+  height: 185px;
+}
+.mini-content p {
+  margin-bottom: 0;
+}
+.mini-content h5 {
+  color: #545b62;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.main-title__right h4 {
+  color: #545b62;
+  margin-bottom: 30px;
+  font-weight: bold;
+  border-bottom: 2px solid #545b62;
+}
+.main-title__right a {
+  color: #545b62;
+  text-decoration: none;
+}
+.right-img img {
+  width: 100%;
+  height: 200px;
+  top: 0;
+  left: 0;
+  object-position: 50% 50%;
+  transition: all 0.3s linear;
+}
+.right-img {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.right-img:hover img {
+  transform: scale(1.1);
+}
+.right-row {
+  margin-top: 15px;
+}
+.right-img__small img {
+  width: 100%;
+  height: 90px;
+  top: 0;
+  left: 0;
+  object-position: 50% 50%;
+  transition: all 0.3s linear;
+}
+.right-img__small {
+  position: relative;
+  height: 90px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.right-img__small:hover img {
+  transform: scale(1.1);
+}

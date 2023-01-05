@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../header-footer.css" />
+    <title>Blog du lịch Việt Nam</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top__logo">
+            <div class="header-top__left">
+              <img
+                src="../image/logo-blog-du-lich-viet-nam-final.png"
+                alt=""
+                class="logo"
+              />
+              <div class="search">
+                <form method="get" action="#" class="search-box">
+                  <input
+                    id="search"
+                    class="search-input"
+                    type="text"
+                    placeholder="Nhập địa điểm du lịch cần tìm..."
+                    name="search"
+                  />
+                  <button class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary user"
+                type="button"
+                id="dropdownMenu2"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-user"></i>
+              </button>
+              <div
+                class="dropdown-menu menu-user"
+                aria-labelledby="dropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">BÀI VIẾT MỚI</a>
+                <a class="dropdown-item" href="#">ĐĂNG NHẬP</a>
+                <a class="dropdown-item" href="#">ĐĂNG KÝ</a>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar">
+            <li class="navbar-item0">
+              <a href="#">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item1">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  CẨM NANG DU LỊCH
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">DU LỊCH PHÚ QUỐC</a>
+                  <a class="dropdown-item" href="#">DU LỊCH ĐÀ LẠT</a>
+                  <a class="dropdown-item" href="#">DU LỊCH ĐÀ NẲNG</a>
+                  <a class="dropdown-item" href="#">DU LỊCH SA PA</a>
+                </div>
+              </div>
+            </li>
+            <li class="navbar-item2">
+              <a href="#">TOP ĐỊA ĐIỂM</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100 active-img"
+                src="../image/nhung-dieu-luu-y-khi-du-lich-tai-eo-gio-quy-nhon.jpeg"
+                alt="First slide"
+              />
+              <div class="title">
+                <h4>
+                  Eo Gió Quy Nhơn Có Thú Vị - Kinh Nghiệm Du Lịch Quy Nhơn
+                </h4>
+                <p><i class="fa-regular fa-clock"></i> 12/28/2022</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 active-img"
+                src="../image/nhung-dieu-luu-y-khi-du-lich-tai-eo-gio-quy-nhon.jpeg"
+                alt="Second slide"
+              />
+              <div class="title">
+                <h4>Du Lịch Quy Nhơn | Những Điểu Nhất Định Bạn Phải Biết</h4>
+                <p><i class="fa-regular fa-clock"></i> 12/28/2022</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 active-img"
+                src="../image/so-dien-thoai-va-gia-ca-cac-hang-taxi-phu-quoc.jpeg"
+                alt="Third slide"
+              />
+              <div class="title">
+                <h4>Bản Giá Taxi Phú Quốc - Số Điện Thoại Taxi 2022</h4>
+                <p><i class="fa-regular fa-clock"></i> 12/28/2022</p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="product1">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="main-img">
+                <img src="../image/phu quoc.jpeg" alt="" />
+                <div class="empty">
+                  <a href="#">DU LỊCH PHÚ QUỐC</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="main-img">
+                <img src="../image/da lat.jpeg" alt="" />
+                <div class="empty">
+                  <a href="#">DU LỊCH ĐÀ LẠT</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="main-img">
+                <img src="../image/da nang.jpg" alt="" />
+                <div class="empty">
+                  <a href="#">DU LỊCH ĐÀ NẲNG</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="main-img">
+                <img src="../image/sapa.jpg" alt="" />
+                <div class="empty">
+                  <a href="#">DU LỊCH SA PA</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product2">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="main-title">
+                <a href="#">
+                  <div class="main-title__img">
+                    <img
+                      src="../image/nhung-dieu-luu-y-khi-du-lich-tai-eo-gio-quy-nhon.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="main-title__content">
+                    <h5>
+                      Eo Gió Quy Nhơn Có Thú Vị - Kinh Nghiệm Du Lịch Quy Nhơn
+                    </h5>
+                    <div class="main-title__time">
+                      <i class="fa-regular fa-clock"></i> 12/28/2022
+                    </div>
+                    <p class="p">
+                      Gần đây các địa điểm du lịch tại Quy Nhơn bỗng trở nên
+                      “hot” hơn bao giờ hết, một trong số đó là khu du lịch eo
+                      gió Quy Nhơn - nơi mà được giới trẻ yêu thích nhất. Vậy
+                      thì eo gió Quy Nhơn có gì hay? Đi Đâu?...
+                    </p>
+                    <button class="main-title__btn">ĐỌC TIẾP</button>
+                  </div>
+                </a>
+              </div>
+              <div class="main-title__mini">
+                <a href="#">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mini-img">
+                        <img src="../image/quynhonmini.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mini-content">
+                        <h5>
+                          Du Lịch Quy Nhơn | Những Điều Nhất Định Bạn Phải Biết
+                        </h5>
+                        <div class="main-title__time">
+                          <i class="fa-regular fa-clock"></i> 12/28/2022
+                        </div>
+                        <p class="p">
+                          Chưa đi chưa biết Quy Nhơn, đi rồi mới biết Quy Nhơn
+                          đẹp vô cùng! Khu du lịch Quy Nhơn luôn là một trong
+                          những địa điểm du lịch thu hút đông đảo du khách nhất
+                          ở miền Trung. Vì vậy, còn chần chờ gì mà không bắt tay
+                          chuẩn...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="main-title__mini">
+                <a href="#">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mini-img">
+                        <img
+                          src="../image/so-dien-thoai-va-gia-ca-cac-hang-taxi-phu-quoc.jpeg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mini-content">
+                        <h5>
+                          Bảng Giá Taxi Phú Quốc - Số Điện Thoại Taxi 2022
+                        </h5>
+                        <div class="main-title__time">
+                          <i class="fa-regular fa-clock"></i> 12/28/2022
+                        </div>
+                        <p class="p">
+                          Để tránh bị “chặt chém” khi đi xe taxi Phú Quốc, hôm
+                          nay mình sẽ tổng hợp các hãng taxi ở Phú Quốc và giá
+                          cả. Ngoài ra, mình để phía dưới một số tip khi đi taxi
+                          để an toàn và tránh bị “hớ” giá. Hãy cùng mình đọc...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="main-title__mini">
+                <a href="#">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mini-img">
+                        <img src="../image/thitran.jpeg" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mini-content">
+                        <h5>Khám Phá Thị Trấn Địa Trung Hải Phú Quốc</h5>
+                        <div class="main-title__time">
+                          <i class="fa-regular fa-clock"></i> 12/28/2022
+                        </div>
+                        <p class="p">
+                          Phú Quốc là một điểm đến thú vị được du khách trong
+                          nước lẫn nước ngoài yêu thích bởi vẻ đẹp cực kỳ cuốn
+                          hút. Đến với Phú Quốc bạn sẽ được trải nghiệm những
+                          cảnh quan ấn tượng, mới lạ cùng những bãi biển hoang
+                          sơ cho đến những...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="main-title__right">
+                <h4>BÀI VIẾT GẦN ĐÂY</h4>
+                <a href="#">
+                  <div class="row">
+                    <div class="col">
+                      <div class="right-img">
+                        <img
+                          src="../image/nhung-dieu-luu-y-khi-du-lich-tai-eo-gio-quy-nhon.jpeg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="footer-title__content">
+                        <h5>
+                          Eo Gió Quy Nhơn Có Thú Vị - Kinh Nghiệm Du Lịch Quy
+                          Nhơn
+                        </h5>
+                        <div class="main-title__time">
+                          <i class="fa-regular fa-clock"></i> 12/28/2022
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="row right-row">
+                  <div class="col">
+                    <a href="#">
+                      <div class="right-img__small">
+                        <img
+                          src="../image/dia-diem-du-lich-quy-nhon-eo-gio.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="footer-title__content">
+                        <h5>
+                          Du Lịch Quy Nhơn | Những Điều Nhất Định Bạn Phải Biết
+                        </h5>
+                        <div class="main-title__time">
+                          <i class="fa-regular fa-clock"></i> 12/28/2022
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a href="#">
+                      <div class="right-img__small">
+                        <img
+                          src="../image/so-dien-thoai-va-gia-ca-cac-hang-taxi-phu-quoc.jpeg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="footer-title__content">
+                        <h5>
+                          Bảng Giá Taxi Phú Quốc - Số Điện Thoại Taxi 2022
+                        </h5>
+                        <div class="main-title__time">
+                          <i class="fa-regular fa-clock"></i> 12/28/2022
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="row right-row">
+                  <div class="col">
+                    <a href="#">
+                      <div class="right-img__small">
+                        <img src="../image/phu quoc.jpeg" alt="" />
+                      </div>
+                      <div class="footer-title__content">
+                        <h5>Khám Phá Thị Trấn Địa Trung Hải Phú Quốc</h5>
+                        <div class="main-title__time">
+                          <i class="fa-regular fa-clock"></i> 12/28/2022
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a href="#">
+                      <div class="right-img__small">
+                        <img src="../image/khachsannt.jpg" alt="" />
+                      </div>
+                      <div class="footer-title__content">
+                        <h5>
+                          Bạn Đã Biết Chưa? Tổng Hợp Khách Sạn Nha Trang - Khu
+                          Nghỉ Dưỡng Cao Cấp
+                        </h5>
+                        <div class="main-title__time">
+                          <i class="fa-regular fa-clock"></i> 12/28/2022
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="footer-left">
+              <h4>BÀI VIẾT PHỔ BIẾN</h4>
+              <a href="#">
+                <div class="footer--title">
+                  <div class="col footer-title__col">
+                    <div class="footer-title__img">
+                      <img
+                        src="../image/nhung-dieu-luu-y-khi-du-lich-tai-eo-gio-quy-nhon.jpeg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col footer-title__col">
+                    <div class="footer-title__content">
+                      <h5>
+                        Eo Gió Quy Nhơn Có Thú Vị - Kinh Nghiệm Du Lịch Quy Nhơn
+                      </h5>
+                      <div class="main-title__time">
+                        <i class="fa-regular fa-clock"></i> 12/28/2022
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="footer--title">
+                  <div class="col footer-title__col">
+                    <div class="footer-title__img">
+                      <img src="../image/quynhonmini.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col footer-title__col">
+                    <div class="footer-title__content">
+                      <h5>
+                        Du Lịch Quy Nhơn | Những Điều Nhất Định Bạn Phải Biết
+                      </h5>
+                      <div class="main-title__time">
+                        <i class="fa-regular fa-clock"></i> 12/28/2022
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="footer--title">
+                  <div class="col footer-title__col">
+                    <div class="footer-title__img">
+                      <img
+                        src="../image/so-dien-thoai-va-gia-ca-cac-hang-taxi-phu-quoc.jpeg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col footer-title__col">
+                    <div class="footer-title__content">
+                      <h5>Bảng Giá Taxi Phú Quốc - Số Điện Thoại Taxi 2022</h5>
+                      <div class="main-title__time">
+                        <i class="fa-regular fa-clock"></i> 12/28/2022
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="footer-right">
+              <div class="row">
+                <div class="col">
+                  <div class="main-img">
+                    <img src="../image/phu quoc.jpeg" alt="" />
+                    <div class="empty">
+                      <a href="#">DU LỊCH PHÚ QUỐC</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="main-img">
+                    <img src="../image/da lat.jpeg" alt="" />
+                    <div class="empty">
+                      <a href="#">DU LỊCH ĐÀ LẠT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="main-img">
+                    <img src="../image/da nang.jpg" alt="" />
+                    <div class="empty">
+                      <a href="#">DU LỊCH ĐÀ NẲNG</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="main-img">
+                    <img src="../image/sapa.jpg" alt="" />
+                    <div class="empty">
+                      <a href="#">DU LỊCH SA PA</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="footer-bottom">
+            <div class="footer-wapper">
+              <div class="col footer-col">
+                <div class="footer-box">
+                  <div class="logo">
+                    <img
+                      src="../image/logo-blog-du-lich-viet-nam-final.png"
+                      alt="logo"
+                      class="logo-img"
+                    />
+                  </div>
+                  <p class="footer-text">
+                    <span class="footer-first">Địa chỉ: </span>
+                    <a
+                      href="https://www.google.com/search?rlz=1C1UEAD_viVN992VN992&tbs=lf:1,lf_ui:1&tbm=lcl&sxsrf=ALiCzsZqpLUiP4d_s1z8kN_v6RcML5vlWw:1672409620254&q=%E1%BA%A4p+Th%E1%BB%A7+%C4%90%E1%BB%A9c,+X%C3%A3+H%C3%B2a+An,+Huy%E1%BB%87n+Ph%E1%BB%A5ng+Hi%E1%BB%87p,+T%E1%BB%89nh+H%E1%BA%ADu+Giang&rflfq=1&num=10&ved=2ahUKEwir6dWqw6H8AhUFT3wKHc-vBogQtgN6BAgeEAY#rlfi=hd:;si:,9.848044052864049,105.63629444573951;mv:[[9.876456990694022,105.84228809808326],[9.725569920694824,105.54703052972388],null,[9.801022036050336,105.69465931390357],12]"
+                    >
+                      Ấp Thủ Đức, Xã Hòa An, Huyện Phụng Hiệp, Tỉnh Hậu Giang
+                    </a>
+                  </p>
+                  <p class="footer-text">
+                    <span class="footer-first">Hotline: </span>
+                    <a
+                      href="https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F%3Fnull"
+                      >0788793092 (zalo)
+                    </a>
+                  </p>
+
+                  <p class="footer-text">
+                    <span class="footer-first">Email: </span>
+                    <a
+                      href="https://accounts.google.com/v3/signin/identifier?dsh=S-66243553%3A1672409788869720&authuser=0&continue=https%3A%2F%2Fmail.google.com&ec=GAlAFw&hl=vi&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession"
+                    >
+                      huyb2014836@student.ctu.edu.vn
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="col footer-col">
+                <div class="footer-box">
+                  <h3 class="footer-title">NỘI DUNG</h3>
+                  <ul class="footer-list">
+                    <li class="footer-item">
+                      <a href="#"> Trang CHủ </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#"> Cẩm Nang Du Lịch </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#"> Top Địa Điểm </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#"> Bài Viết Mới </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#"> Đăng Nhập </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#"> Đăng Ký </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col footer-col">
+                <div class="footer-box">
+                  <h3 class="footer-title">FACEBOOK</h3>
+                  <div class="footer-fb">
+                    <img src="../image/fb.jpg" alt="" class="footer-img" />
+                    <div class="fb-share">
+                      <a href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook-f"></i> Theo dõi trang
+                      </a>
+                      <a href="https://www.facebook.com/">
+                        <i class="fa-solid fa-share"></i> Chia sẽ
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom__son">
+              Copyright 2022 © <span>Blogdulichvietnam.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
